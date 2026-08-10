@@ -3,120 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Updated Name | Senior Software Engineer</title>
-  <meta name="description" content="Senior Software Engineer specializing in Tungsten Automation, ECM, RPA, and AI-Assisted Automation." />
-  <link rel="stylesheet" href="style.css" />
+  <title>Mukesh Babu | Senior Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer | Tungsten Automation | ECM | RPA & AI-Assisted Automation" />
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="container nav">
-      <a href="#" class="logo">Your Updated Name</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <nav class="nav container">
+      <h1 class="brand">Mukesh Babu</h1>
+      <ul class="menu" id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Key Highlights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle" id="toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
   </header>
 
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <p class="eyebrow">Senior Software Engineer</p>
-        <h1>Tungsten Automation | ECM | RPA & AI-Assisted Automation</h1>
-        <p class="intro">
-          SME leading enterprise document/workflow automation across OCR, classification,
-          extraction, validation, production support, and release execution.
+        <h2 class="hero-title">Hi, I'm Mukesh Babu</h2>
+        <h3 class="hero-subtitle">Senior Software Engineer</h3>
+        <p class="hero-text">
+          Tungsten Automation | ECM | RPA & AI-Assisted Automation.
+          SME delivering enterprise-grade document and workflow automation.
         </p>
         <div class="hero-actions">
-          <a class="btn" href="#contact">Get in Touch</a>
-          <a class="btn btn-outline" href="Resume_Mukesh.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn primary" href="#contact">Get in Touch</a>
+          <a class="btn secondary" href="Resume_Mukesh.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://mukeshbabug.github.io/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:user_mukesh@yahoo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-
-      <div class="profile-wrap">
-        <img src="assets/profile.jpg" alt="Your Updated Name profile photo" class="profile-photo" />
+      <div class="photo-wrap">
+        <img src="assets/images/profile.jpg" alt="Mukesh Babu" class="photo" />
       </div>
     </div>
   </section>
 
   <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I design and support business-critical automation solutions using Tungsten/Kofax technologies
-          with a focus on reliability, scalability, and measurable process improvement.
-        </p>
-      </div>
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I build and support business-critical Tungsten/Kofax automation solutions including OCR,
+        classification, extraction, validation, integrations, production support, RCA, testing, and releases.
+      </p>
     </section>
 
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Technology Stack</h2>
-        <ul class="chips">
-          <li>Tungsten TotalAgility (TTA)</li>
-          <li>Kofax Transformation Modules (KTM)</li>
-          <li>Kofax Capture / VRS</li>
-          <li>Kofax Insights</li>
-          <li>Documentum 7.11</li>
-          <li>Experlogix (Xpertdoc)</li>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>SQL</li>
-          <li>Azure</li>
-        </ul>
+        <h2>Skills</h2>
+        <div class="tags">
+          <span>Tungsten TotalAgility (TTA)</span>
+          <span>Kofax Transformation Modules (KTM)</span>
+          <span>Kofax Capture / VRS</span>
+          <span>Kofax Insights</span>
+          <span>Documentum 7.11</span>
+          <span>Experlogix (Xpertdoc)</span>
+          <span>OCR / Extraction / Validation</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>SQL</span>
+          <span>Azure</span>
+          <span>RPA</span>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="certifications" class="section container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Kofax TotalAgility 7.6 Essentials</li>
+        <li>KTA 7.8 Cognitive Capture Essentials</li>
+        <li>Kofax Insights 5.4</li>
+        <li>Post Graduate Program in Software Engineering – Java Tech Stack</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section alt">
       <div class="container">
-        <h2>Key Projects</h2>
+        <h2>Key Highlights</h2>
         <div class="cards">
           <article class="card">
-            <h3>Enterprise Claims Workflow Automation</h3>
-            <p>
-              Led Tungsten/Kofax workflow enhancements including OCR, extraction, validation,
-              production support, RCA, testing, and release execution.
-            </p>
+            <i class="fas fa-cogs"></i>
+            <h3>Workflow Modernization</h3>
+            <p>Led critical Tungsten workflow enhancements, support, RCA, testing, and release execution.</p>
           </article>
           <article class="card">
-            <h3>Document Generation with Experlogix</h3>
-            <p>
-              Built tokenized Word templates, business-rule-based document assembly,
-              conditional logic, loops, and dynamic output generation.
-            </p>
+            <i class="fas fa-file-word"></i>
+            <h3>Document Automation</h3>
+            <p>Built tokenized Word-template solutions in Experlogix/Xpertdoc with dynamic rules and subdocuments.</p>
           </article>
           <article class="card">
-            <h3>Azure Hands-on Engineering Labs</h3>
-            <p>
-              Completed 18 labs (~36 hours) covering API integration, security, storage,
-              monitoring, and container-based cloud deployments.
-            </p>
+            <i class="fas fa-cloud"></i>
+            <h3>Azure Hands-on Labs</h3>
+            <p>Completed 18 labs (~36 hours) across APIs, security, storage, monitoring, and cloud deployment.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank" rel="noopener">linkedin.com/in/mukesh-babu-g</a></p>
-        <p>GitHub: <a href="https://mukeshbabug.github.io/" target="_blank" rel="noopener">mukeshbabug.github.io</a></p>
-      </div>
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank">linkedin.com/in/mukesh-babu-g</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://mukeshbabug.github.io/" target="_blank">mukeshbabug.github.io</a></p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Your Updated Name</p>
-    </div>
+    <p>© <span id="year"></span> Mukesh Babu</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
