@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mukesh Babu - Senior Software Engineer</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=1.0" />
+  <link rel="stylesheet" href="style.css?v=2.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
-    <nav class="nav">
-      <div class="nav-brand"><h1>Mukesh Babu</h1></div>
-      <ul class="nav-menu">
+    <nav class="nav container">
+      <h1 class="brand">Mukesh Babu</h1>
+      <ul class="menu">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -20,202 +20,71 @@
         <li><a href="#projects">Key Highlights</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
     </nav>
   </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">Hi, I'm Mukesh Babu</h1>
-          <h2 class="hero-subtitle">Senior Software Engineer</h2>
-          <p class="hero-description">
-            Tungsten Automation | ECM | RPA & AI-Assisted Automation.  
-            SME delivering enterprise-grade document and workflow automation across OCR, extraction, validation, integrations, and release execution.
-          </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            <a href="Resume_Mukesh.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
-          </div>
-          <div class="hero-social">
-            <a href="https://mukeshbabug.github.io/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:user_mukesh@yahoo.com"><i class="fas fa-envelope"></i></a>
-          </div>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2>Hi, I'm Mukesh Babu</h2>
+        <h3>Senior Software Engineer | Tungsten Automation | ECM | RPA & AI-Assisted Automation</h3>
+        <p>
+          SME delivering enterprise-grade document and workflow automation across OCR, extraction,
+          validation, integrations, production support, and release execution.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Get in Touch</a>
+          <a class="btn secondary" href="Resume_Mukesh.pdf" target="_blank">View Resume</a>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/profile.jpg" alt="Mukesh Babu" class="profile-img">
+        <div class="social">
+          <a href="https://mukeshbabug.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:user_mukesh@yahoo.com"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>I am a Senior Software Engineer with strong experience in Tungsten/Kofax automation solutions for enterprise document-driven workflows.</p>
-            <p>My role spans development, production support, RCA, stakeholder collaboration, testing, and release execution.</p>
-            <p>I focus on building scalable, maintainable automation workflows that improve business productivity and quality.</p>
-          </div>
-          <div class="about-highlights">
-            <div class="highlight-item"><h3>6+</h3><p>Years Experience</p></div>
-            <div class="highlight-item"><h3>10+</h3><p>Core Technologies</p></div>
-            <div class="highlight-item"><h3>18</h3><p>Azure Hands-on Labs</p></div>
-          </div>
-        </div>
+      <div class="hero-photo">
+        <img src="assets/images/profile.jpg" alt="Mukesh Babu">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <h3>Senior Software Engineer</h3>
-              <h4>Enterprise Automation Platform</h4>
-              <p class="timeline-date">Current</p>
-              <ul>
-                <li>Serve as SME leading Tungsten (Kofax) workflow development and enhancements.</li>
-                <li>Own production support, RCA, testing, and release execution.</li>
-                <li>Drive stakeholder requirements and vendor knowledge transfer.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <h3>Automation Engineer</h3>
-              <h4>Document Processing Solutions</h4>
-              <p class="timeline-date">Previous</p>
-              <ul>
-                <li>Implemented OCR classification, extraction, and validation workflows.</li>
-                <li>Integrated with ECM/DMS platforms including Documentum and downstream systems.</li>
-                <li>Supported process analytics and continuous improvement.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="about" class="section container">
+    <h2 class="title">About Me</h2>
+    <p>I am a Senior Software Engineer with strong experience in Tungsten/Kofax automation solutions for enterprise document-driven workflows.</p>
+  </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Tungsten / Kofax Core</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">TTA</span><span class="skill-tag">KTM</span><span class="skill-tag">Kofax Capture</span>
-              <span class="skill-tag">VRS</span><span class="skill-tag">Kofax Insights</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Document Automation</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Experlogix</span><span class="skill-tag">Xpertdoc</span><span class="skill-tag">Tokenized Templates</span>
-              <span class="skill-tag">Conditional Logic</span><span class="skill-tag">Subdocuments</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>ECM & Integrations</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Documentum 7.11</span><span class="skill-tag">Import Connector</span><span class="skill-tag">DMS Integration</span>
-              <span class="skill-tag">REST</span><span class="skill-tag">API Integration</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Modern Stack</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span><span class="skill-tag">Spring Boot</span><span class="skill-tag">SQL</span>
-              <span class="skill-tag">Azure</span><span class="skill-tag">RPA</span><span class="skill-tag">JIRA</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="experience" class="section alt container">
+    <h2 class="title">Experience</h2>
+    <p>Serve as SME leading workflow development, enhancements, production support, RCA, testing, and release execution.</p>
+  </section>
 
-    <section id="certifications" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certifications-grid">
-          <div class="certification-item"><h3>Kofax TotalAgility 7.6 Essentials</h3></div>
-          <div class="certification-item"><h3>KTA 7.8 Cognitive Capture Essentials</h3></div>
-          <div class="certification-item"><h3>Kofax Insights 5.4</h3></div>
-          <div class="certification-item"><h3>PG Program in Software Engineering (Java Tech Stack)</h3></div>
-        </div>
-      </div>
-    </section>
+  <section id="skills" class="section container">
+    <h2 class="title">Skills</h2>
+    <div class="chips">
+      <span>TTA</span><span>KTM</span><span>Kofax Capture/VRS</span><span>Kofax Insights</span>
+      <span>Documentum 7.11</span><span>Experlogix/Xpertdoc</span><span>Java</span><span>Spring Boot</span><span>SQL</span><span>Azure</span>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Key Highlights</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image"><i class="fas fa-cogs"></i></div>
-            <div class="project-content">
-              <h3>Workflow Enhancement Ownership</h3>
-              <p>Led critical Tungsten automation enhancements with end-to-end delivery support.</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image"><i class="fas fa-file-word"></i></div>
-            <div class="project-content">
-              <h3>Experlogix Document Automation</h3>
-              <p>Implemented tokenized Word-template generation with business rules and dynamic logic.</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image"><i class="fas fa-database"></i></div>
-            <div class="project-content">
-              <h3>Enterprise Integration</h3>
-              <p>Delivered ECM/DMS integrations and stable release rollout across environments.</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-image"><i class="fas fa-cloud"></i></div>
-            <div class="project-content">
-              <h3>Azure Hands-on Labs</h3>
-              <p>Completed 18 labs (~36 hours) across API, security, storage, monitoring, and deployment.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="certifications" class="section alt container">
+    <h2 class="title">Certifications</h2>
+    <ul>
+      <li>Kofax TotalAgility 7.6 Essentials</li>
+      <li>KTA 7.8 Cognitive Capture Essentials</li>
+      <li>Kofax Insights 5.4</li>
+      <li>PG Program in Software Engineering – Java Tech Stack</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Let's Connect</h3>
-            <p>Open to opportunities in document automation, ECM, and enterprise workflow transformation.</p>
-            <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a></div>
-            <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank">LinkedIn Profile</a></div>
-            <div class="contact-item"><i class="fab fa-github"></i><a href="https://mukeshbabug.github.io/" target="_blank">GitHub Profile</a></div>
-          </div>
-          <div class="contact-form">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <input type="text" name="subject" placeholder="Subject" required>
-              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section id="projects" class="section container">
+    <h2 class="title">Key Highlights</h2>
+    <p>Workflow modernization, Experlogix document automation, ECM integrations, and Azure labs.</p>
+  </section>
 
-  <footer class="footer"><p>© <span id="year"></span> Mukesh Babu</p></footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const toggle = document.getElementById("navToggle");
-    const menu = document.querySelector(".nav-menu");
-    toggle.addEventListener("click", () => menu.classList.toggle("show"));
-  </script>
+  <section id="contact" class="section alt container">
+    <h2 class="title">Get In Touch</h2>
+    <p>Email: <a href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank">linkedin.com/in/mukesh-babu-g</a></p>
+  </section>
 </body>
 </html>
