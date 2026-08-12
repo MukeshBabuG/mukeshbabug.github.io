@@ -89,9 +89,19 @@ window.addEventListener("resize", () => {
 
 if (runningText) {
   const phrase = runningText.getAttribute("data-text") || "Hi, I'm Mukesh Babu";
+  const typingDisabled = runningText.getAttribute("data-disable-typing") === "true";
   let hasTyped = false;
 
+  if (typingDisabled) {
+    runningText.textContent = phrase;
+    runningText.classList.remove("is-typing");
+  }
+
   const startTyping = () => {
+    if (typingDisabled) {
+      return;
+    }
+
     if (hasTyped) {
       return;
     }
@@ -109,14 +119,14 @@ if (runningText) {
         clearInterval(typeOnce);
         runningText.classList.remove("is-typing");
       }
-    }, 75);
+    }, 115);
   };
 
   const atHomeHash = window.location.hash === "" || window.location.hash === "#home";
-  runningText.textContent = atHomeHash ? "" : phrase;
+  runningText.textContent = typingDisabled ? phrase : (atHomeHash ? "" : phrase);
 
   if (atHomeHash) {
-    startTyping();
+    setTimeout(startTyping, 320);
   } else {
     const homeSection = document.getElementById("home");
     if (homeSection) {
