@@ -3,88 +3,511 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mukesh Babu - Senior Software Engineer</title>
-  <link rel="stylesheet" href="style.css?v=2.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="description" content="Mukesh Babu G | Senior Software Engineer specializing in Tungsten Automation, ECM, and intelligent document workflows." />
+  <title>Mukesh Babu G | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <h1 class="brand">Mukesh Babu</h1>
-      <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#projects">Key Highlights</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="hero-header site-header">
+    <a href="#home" class="brand header-brand logo" aria-label="Back to home">
+      <img class="brand-mark logo-mark" src="assets/images/MB.png" alt="MB" />
+      <span class="brand-pipe" aria-hidden="true">|</span>
+      <span class="brand-text">
+        <strong>MUKESH BABU G</strong>
+        <small>SENIOR SOFTWARE ENGINEER</small>
+      </span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="top-nav" id="topNav" aria-label="Top navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h2>Hi, I'm Mukesh Babu</h2>
-        <h3>Senior Software Engineer | Tungsten Automation | ECM | RPA & AI-Assisted Automation</h3>
+  <main>
+    <section class="hero" id="home" aria-label="Homepage hero">
+      <img
+        class="hero-background"
+        src="assets/images/office-background.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <div class="hero-background-overlay" aria-hidden="true"></div>
+      <div class="hero-red-panel" aria-hidden="true"></div>
+      <img
+        class="hero-person"
+        src="assets/images/mukesh-foreground.png"
+        alt="Mukesh Babu G, Senior Software Engineer"
+      />
+
+      <div class="hero-copy">
+        <h1 class="hero-title" id="running-text" data-text="Hi, I'm Mukesh Babu" aria-label="Typing introduction">Hi, I'm Mukesh Babu</h1>
+        <p class="hero-tagline">Engineering Intelligent Automation Solutions</p>
+        <div class="hero-description">
+          <p>
+            I specialize in transforming complex enterprise processes into scalable, reliable, and intelligent digital
+            solutions through automation, document technologies, and software engineering.
+          </p>
+          <p>
+            Beyond solving today's challenges, I enjoy exploring emerging technologies, building smarter workflows,
+            and creating solutions that make systems simpler, faster, and easier to use.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#resume" class="hero-button hero-button--primary">View Resume</a>
+        <a href="#contact" class="hero-button hero-button--secondary">Let's Connect</a>
+      </div>
+
+      <aside class="hero-focus" aria-label="Current focus area">
+        <span class="hero-focus__label">Current Focus</span>
+
+        <article class="hero-focus__item">
+          <h2>AI-Assisted Document Automation</h2>
+          <p>
+            Developing smarter approaches to template programming, token mapping, rule creation, validation, and
+            dynamic document generation.
+          </p>
+        </article>
+
+        <article class="hero-focus__item">
+          <h2>Workflow &amp; Platform Modernization</h2>
+          <p>
+            Modernizing Tungsten/Kofax workflows, enterprise integrations, DMS processing, and platform upgrade
+            readiness.
+          </p>
+        </article>
+
+        <article class="hero-focus__item">
+          <h2>Reliable Enterprise Automation</h2>
+          <p>
+            Improving RPA stability, exception recovery, queue processing, observability, and production resilience for
+            business-critical operations.
+          </p>
+        </article>
+      </aside>
+
+      <section class="hero-cards" aria-label="Profile highlights">
+        <article class="hero-card info-card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 7h16a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1Zm5-3h6a2 2 0 0 1 2 2v1H7V6a2 2 0 0 1 2-2Z"/></svg>
+          </span>
+          <h3>Experience</h3>
+          <div class="card-divider" aria-hidden="true"></div>
+          <p class="value">7+ Years</p>
+          <p class="sub">ECM • Automation • Production Support</p>
+        </article>
+
+        <article class="hero-card info-card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2 4v2h10V7H7Zm0 4v2h6v-2H7Zm0 4v2h10v-2H7Z"/></svg>
+          </span>
+          <h3>Specialization</h3>
+          <div class="card-divider" aria-hidden="true"></div>
+          <p class="value">Tungsten Automation</p>
+          <p class="sub">TTA • KTM • Documentum • OCR</p>
+        </article>
+
+        <article class="hero-card info-card">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/></svg>
+          </span>
+          <h3>Current Role</h3>
+          <div class="card-divider" aria-hidden="true"></div>
+          <p class="value">Senior Software Engineer</p>
+          <p class="sub">First American India</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="about" class="content-section site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">About</p>
+          <h2 class="section-heading__title">Building enterprise-grade automation workflows with operational reliability</h2>
+        </div>
         <p>
-          SME delivering enterprise-grade document and workflow automation across OCR, extraction,
-          validation, integrations, production support, and release execution.
+          Based in Bengaluru, India, I am a Senior Software Engineer with 7+ years of experience delivering enterprise
+          content management and intelligent automation solutions for banking, financial services, and insurance domains.
+          My work focuses on building stable, secure, and scalable document-centric platforms that perform reliably in
+          real-world production environments.
         </p>
-        <div class="buttons">
-          <a class="btn primary" href="#contact">Get in Touch</a>
-          <a class="btn secondary" href="Resume_Mukesh.pdf" target="_blank">View Resume</a>
+        <p>
+          I specialize in Tungsten TotalAgility and broader Kofax ecosystems, including document classification,
+          extraction, validation, exception handling, and workflow orchestration. I regularly design and support
+          integrations across ECM systems, APIs, SQL-backed services, and business-rule layers to ensure clean data flow,
+          process traceability, and measurable operational outcomes.
+        </p>
+        <p>
+          Beyond implementation, I actively contribute to requirement discussions, SIT/UAT support, release readiness,
+          and post-deployment stabilization. I enjoy collaborating with product owners, QA teams, and infrastructure
+          stakeholders to convert complex process needs into maintainable automation architecture with strong governance
+          and long-term supportability.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section soft site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">Experience</p>
+          <h2 class="section-heading__title">Professional timeline</h2>
         </div>
-        <div class="social">
-          <a href="https://mukeshbabug.github.io/" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:user_mukesh@yahoo.com"><i class="fas fa-envelope"></i></a>
+        <div class="experience-scroll" role="region" aria-label="Professional experience timeline">
+          <div class="experience-timeline">
+            <article class="experience-item left experience-card">
+              <h3>Senior Software Engineer</h3>
+              <p class="company">First American India - Bengaluru, India</p>
+              <p class="meta">Feb 2024 - Present</p>
+              <ul>
+                <li>SME ownership across workflow design, RCA, SIT/UAT support, and controlled production deployments.</li>
+                <li>Delivered secure document-upload enhancements with stronger validation and compliance alignment.</li>
+                <li>Implemented DMS retention optimization and KTA database control improvements for stable operations.</li>
+                <li>Built reusable internal utilities to reduce manual support effort and improve turnaround time.</li>
+                <li>Supported claims lifecycle orchestration, integration reliability, and incident stabilization.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item right experience-card">
+              <h3>Associate</h3>
+              <p class="company">Cognizant - Chennai, India</p>
+              <p class="meta">Oct 2019 - Jan 2024</p>
+              <ul>
+                <li>Developed and supported Tungsten/Kofax and Documentum workflows for BFSI document operations.</li>
+                <li>Implemented classification, extraction, validation, and reject queue strategies for high-volume batches.</li>
+                <li>Integrated XML, JSON, SQL, and API-driven business rules into capture and workflow pipelines.</li>
+                <li>Improved reporting quality and operational visibility using Kofax Insights dashboards.</li>
+                <li>Handled production issue triage with RCA ownership and release-side verification.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item left experience-card">
+              <h3>Delivery Scope Highlights</h3>
+              <p class="company">Cross-functional project contributions</p>
+              <p class="meta">Program-level engineering leadership</p>
+              <ul>
+                <li>Claims workflow modernization with secure intake, exception routing, and lifecycle tracking.</li>
+                <li>Experlogix document generation setup with JSON-driven templates and .NET/SQL integration.</li>
+                <li>Automation Anywhere 360 support for bot stabilization and production issue recovery.</li>
+                <li>Continuous collaboration with QA, BA, infra, and business stakeholders in Agile delivery cycles.</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="assets/images/profile.jpg" alt="Mukesh Babu">
+    </section>
+
+    <section id="skills" class="content-section site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">Technical Skills</p>
+          <h2 class="section-heading__title">Core technology stack</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="content-card ui-card">
+            <h3>ECM and Capture Platforms</h3>
+            <div class="chip-row">
+              <span>Tungsten TotalAgility (TTA)</span>
+              <span>Kofax Transformation Modules (KTM)</span>
+              <span>Kofax Import Connector</span>
+              <span>Kofax Analytics / Insights</span>
+              <span>Documentum 7.11</span>
+            </div>
+          </article>
+
+          <article class="content-card ui-card">
+            <h3>Intelligent Automation</h3>
+            <div class="chip-row">
+              <span>OCR</span>
+              <span>Document Classification</span>
+              <span>Data Extraction</span>
+              <span>Validation</span>
+              <span>Automation Anywhere 360</span>
+            </div>
+          </article>
+
+          <article class="content-card ui-card">
+            <h3>Programming and Integration</h3>
+            <div class="chip-row">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>JavaScript</span>
+              <span>SQL / T-SQL</span>
+              <span>JSON</span>
+              <span>APIs</span>
+            </div>
+          </article>
+
+          <article class="content-card ui-card">
+            <h3>Delivery Tools and AI</h3>
+            <div class="chip-row">
+              <span>ServiceNow</span>
+              <span>Jira</span>
+              <span>Azure DevOps</span>
+              <span>GitHub Copilot</span>
+              <span>Prompt Engineering</span>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section container">
-    <h2 class="title">About Me</h2>
-    <p>I am a Senior Software Engineer with strong experience in Tungsten/Kofax automation solutions for enterprise document-driven workflows.</p>
-  </section>
+    <section id="certifications" class="content-section soft site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">Certifications</p>
+          <h2 class="section-heading__title">Professional validation</h2>
+        </div>
+        <div class="grid-two">
+          <article class="content-card ui-card certification-card"><h3>KTA 7.8 Cognitive Capture Essentials</h3></article>
+          <article class="content-card ui-card certification-card"><h3>Kofax TotalAgility 7.6 Essentials</h3></article>
+          <article class="content-card ui-card certification-card"><h3>Kofax Insights 5.4</h3></article>
+          <article class="content-card ui-card certification-card"><h3>Microsoft Azure Cognitive Services</h3></article>
+        </div>
+      </div>
+    </section>
 
-  <section id="experience" class="section alt container">
-    <h2 class="title">Experience</h2>
-    <p>Serve as SME leading workflow development, enhancements, production support, RCA, testing, and release execution.</p>
-  </section>
+    <section id="training" class="content-section site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">Training</p>
+          <h2 class="section-heading__title">Professional development and learning tracks</h2>
+        </div>
+        <div class="grid-two">
+          <article class="content-card ui-card">
+            <h3>Xpertdoc and RPA Enablement</h3>
+            <ul>
+              <li>Xpertdoc vendor-specific training</li>
+              <li>Automation Anywhere 360 foundational RPA training</li>
+              <li>Prompt engineering and agentic AI learning tracks</li>
+            </ul>
+          </article>
+          <article class="content-card ui-card">
+            <h3>Microsoft and Delivery Practices</h3>
+            <ul>
+              <li>Azure DevOps workshop and lifecycle tooling</li>
+              <li>Azure Cognitive Services training</li>
+              <li>Agile delivery collaboration using Jira and ServiceNow</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills" class="section container">
-    <h2 class="title">Skills</h2>
-    <div class="chips">
-      <span>TTA</span><span>KTM</span><span>Kofax Capture/VRS</span><span>Kofax Insights</span>
-      <span>Documentum 7.11</span><span>Experlogix/Xpertdoc</span><span>Java</span><span>Spring Boot</span><span>SQL</span><span>Azure</span>
-    </div>
-  </section>
+    <section id="projects" class="content-section soft site-section">
+      <div class="content-wrap site-container">
+        <div class="section-heading">
+          <p class="kicker section-heading__eyebrow">Projects</p>
+          <h2 class="section-heading__title">Representative delivery highlights</h2>
+        </div>
+        <div class="grid-two">
+          <article class="content-card ui-card"><h3>Claims workflow modernization and secure document intake</h3></article>
+          <article class="content-card ui-card"><h3>DMS retention optimization and KTA database control strategy</h3></article>
+          <article class="content-card ui-card"><h3>Experlogix JSON-driven document generation with .NET and SQL integration</h3></article>
+          <article class="content-card ui-card"><h3>AA360 production bot support and incident stabilization</h3></article>
+        </div>
+      </div>
+    </section>
 
-  <section id="certifications" class="section alt container">
-    <h2 class="title">Certifications</h2>
-    <ul>
-      <li>Kofax TotalAgility 7.6 Essentials</li>
-      <li>KTA 7.8 Cognitive Capture Essentials</li>
-      <li>Kofax Insights 5.4</li>
-      <li>PG Program in Software Engineering – Java Tech Stack</li>
-    </ul>
-  </section>
+    <section class="content-section site-section resume-showcase dark-section" id="resume">
+      <div class="resume-showcase__container site-container">
+        <div class="resume-showcase__heading section-heading">
+          <p class="resume-showcase__eyebrow section-heading__eyebrow">RESUME</p>
+          <h2 class="section-heading__title">Professional Resume Overview</h2>
+          <p class="resume-showcase__intro section-heading__description">
+            A structured summary of my professional experience,
+            technical capabilities, and project delivery profile.
+          </p>
+        </div>
 
-  <section id="projects" class="section container">
-    <h2 class="title">Key Highlights</h2>
-    <p>Workflow modernization, Experlogix document automation, ECM integrations, and Azure labs.</p>
-  </section>
+        <div
+          class="resume-stage"
+          aria-label="Mukesh Babu G professional resume and branding showcase"
+        >
+          <img
+            class="resume-stage__base"
+            src="assets/images/resume-mockup-base.webp"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+          >
 
-  <section id="contact" class="section alt container">
-    <h2 class="title">Get In Touch</h2>
-    <p>Email: <a href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-babu-g" target="_blank">linkedin.com/in/mukesh-babu-g</a></p>
-  </section>
+          <a
+            class="resume-stage__paper-link"
+            href="assets/images/Mukesh_Babu_G_Resume_Aug_2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Mukesh Babu G resume in a new tab"
+          >
+            <img
+              class="resume-stage__resume"
+              src="assets/images/resume-page-1.png"
+              alt="First page of Mukesh Babu G resume"
+              loading="eager"
+            >
+          </a>
+
+          <img
+            class="resume-stage__phone-screen"
+            src="assets/images/portfolio-mobile-preview.png"
+            alt="Mobile preview of Mukesh Babu G portfolio"
+            loading="eager"
+          >
+
+          <div class="resume-stage__badge" aria-hidden="true">
+            <img
+              src="assets/images/mb-logo-burgundy.png"
+              alt=""
+            >
+          </div>
+
+          <article class="resume-stage__profile-note">
+            <h3>PROFILE NOTE</h3>
+            <p>Senior Software Engineer</p>
+            <p>
+              Tungsten Automation | ECM |
+              RPA &amp; AI-Assisted Automation
+            </p>
+            <p>Location: Bengaluru, India</p>
+          </article>
+
+          <article class="resume-stage__contact-card">
+            <strong>MUKESH BABU G</strong>
+            <span>Senior Software Engineer</span>
+            <span>user_mukesh@yahoo.com</span>
+            <span>+91-9443745088</span>
+          </article>
+
+          <article class="resume-stage__brand-card">
+            <img
+              src="assets/images/mb-logo-burgundy.png"
+              alt=""
+              aria-hidden="true"
+            >
+            <span class="resume-stage__brand-pattern" aria-hidden="true"></span>
+            <span class="resume-stage__brand-url">Portfolio</span>
+          </article>
+        </div>
+
+        <div class="resume-showcase__mobile-preview">
+          <img
+            src="assets/images/resume-page-1.png"
+            alt="Readable mobile preview of Mukesh Babu G resume first page"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="resume-showcase__actions">
+          <a
+            class="resume-button button button--primary resume-button--primary"
+            href="assets/images/Mukesh_Babu_G_Resume_Aug_2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Resume
+          </a>
+
+          <a
+            class="resume-button button button--outline-light resume-button--secondary"
+            href="assets/images/Mukesh_Babu_G_Resume_Aug_2026.pdf"
+            download="Mukesh_Babu_G_Resume_Aug_2026.pdf"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section site-section contact-cta dark-section contact-section">
+      <div class="contact-cta-bg" aria-hidden="true"></div>
+      <div class="contact-cta-overlay" aria-hidden="true"></div>
+      <div class="content-wrap site-container contact-cta-wrap">
+        <div class="section-heading">
+          <p class="contact-kicker section-heading__title">Get in Touch!</p>
+          <p class="contact-subtitle section-heading__description">We are looking forward to start a project with you!</p>
+        </div>
+
+        <div class="contact-panel" role="region" aria-label="Contact details and contact form">
+          <div class="contact-panel-rail left" aria-hidden="true"></div>
+          <div class="contact-panel-rail right" aria-hidden="true"></div>
+
+          <div class="contact-panel-grid">
+            <div class="contact-info-list">
+              <article class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 4.58 6.18 12.33 6.44 12.66a.7.7 0 0 0 1.12 0C12.82 21.33 19 13.58 19 9a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg>
+                </span>
+                <div>
+                  <p>Bengaluru, Karnataka, India</p>
+                </div>
+              </article>
+
+              <article class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.8 11.8 0 0 0 3.7.59 1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1A17.49 17.49 0 0 1 3 4a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1 11.8 11.8 0 0 0 .59 3.7 1 1 0 0 1-.24 1l-2.23 2.09Z"/></svg>
+                </span>
+                <div>
+                  <p>+91 94437 45088</p>
+                </div>
+              </article>
+
+              <article class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.22l8 5.16 8-5.16V7l-8 5.16L4 7.01Zm16 10V9.6l-7.46 4.82a1 1 0 0 1-1.08 0L4 9.6V17h16Z"/></svg>
+                </span>
+                <div>
+                  <p class="contact-info-label">Email</p>
+                  <a class="contact-info-link" href="mailto:user_mukesh@yahoo.com">user_mukesh@yahoo.com</a>
+                </div>
+              </article>
+            </div>
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="https://formsubmit.co/ajax/user_mukesh@yahoo.com"
+              method="post"
+            >
+              <input type="hidden" name="_subject" value="Portfolio Contact Form Submission" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <label for="contact-name" class="sr-only">Name</label>
+              <input id="contact-name" class="contact-input" name="name" type="text" placeholder="Enter your Name" required />
+
+              <label for="contact-email" class="sr-only">Email</label>
+              <input id="contact-email" class="contact-input" name="email" type="email" placeholder="Enter a valid email address" required />
+
+              <label for="contact-message" class="sr-only">Message</label>
+              <textarea id="contact-message" class="contact-input" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+              <button class="button button--primary" type="submit">Submit</button>
+              <p class="contact-form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer dark-section" role="contentinfo">
+      <div class="site-container">
+        <p>© Mukesh Babu G. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
