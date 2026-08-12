@@ -673,7 +673,7 @@ section[id] {
 .hero-focus {
   position: absolute;
   z-index: 15;
-  top: 19%;
+  top: 14%;
   right: var(--hero-focus-right);
   width: var(--hero-focus-width);
   padding: 24px 24px 20px;
