@@ -2,6 +2,7 @@ const hamburger = document.getElementById("hamburger");
 const topNav = document.getElementById("topNav");
 const topNavLinks = topNav ? topNav.querySelectorAll("a[href^='#']") : [];
 const sideMenuLinks = document.querySelectorAll(".side-menu a[href^='#']");
+const inPageLinks = document.querySelectorAll("a[href^='#']");
 const allNavLinks = [...topNavLinks, ...sideMenuLinks];
 const sections = document.querySelectorAll("section[id]");
 const runningText = document.getElementById("running-text");
@@ -44,15 +45,31 @@ const handleAnchorClick = (event) => {
   }
 
   event.preventDefault();
-  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  const headerOffset = siteHeader ? siteHeader.offsetHeight + 12 : 0;
+  const isContactAnchor = href === "#contact" || target.id === "contact";
+
+  let targetY;
+
+  if (isContactAnchor) {
+    const sectionBottom = target.getBoundingClientRect().top + window.scrollY + target.offsetHeight;
+    targetY = sectionBottom - window.innerHeight;
+  } else {
+    const contentStart = target.querySelector(".section-heading, .resume-showcase__heading, .content-wrap, .site-container");
+    const anchorPoint = contentStart || target;
+    targetY = anchorPoint.getBoundingClientRect().top + window.scrollY - headerOffset;
+  }
+
+  const maxScrollY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+
+  window.scrollTo({
+    top: Math.min(maxScrollY, Math.max(0, targetY)),
+    behavior: "smooth"
+  });
+
   closeMobileMenu();
 };
 
-topNavLinks.forEach((link) => {
-  link.addEventListener("click", handleAnchorClick);
-});
-
-sideMenuLinks.forEach((link) => {
+inPageLinks.forEach((link) => {
   link.addEventListener("click", handleAnchorClick);
 });
 
@@ -155,11 +172,21 @@ if (contactForm) {
       return;
     }
 
+    if (window.location.protocol === "file:") {
+      if (contactFormStatus) {
+        contactFormStatus.textContent = "Open this site through a web server (for example GitHub Pages or Live Server) before sending messages.";
+        contactFormStatus.classList.remove("is-success");
+        contactFormStatus.classList.add("is-error");
+      }
+      return;
+    }
+
     const submitButton = contactForm.querySelector("button[type='submit']");
     const originalLabel = submitButton ? submitButton.textContent : "Submit";
 
     if (submitButton) {
       submitButton.disabled = true;
+      submitButton.setAttribute("aria-busy", "true");
       submitButton.textContent = "Sending...";
     }
 
@@ -181,7 +208,8 @@ if (contactForm) {
       const submitted = response.ok && (payload.success === "true" || payload.success === true || !payload.success);
 
       if (!submitted) {
-        throw new Error("Submission failed");
+        const apiMessage = typeof payload.message === "string" ? payload.message.trim() : "";
+        throw new Error(apiMessage || "Submission failed");
       }
 
       contactForm.reset();
@@ -192,12 +220,16 @@ if (contactForm) {
       }
     } catch (error) {
       if (contactFormStatus) {
-        contactFormStatus.textContent = "Unable to send right now. Please try again in a moment.";
+        const errorMessage = error instanceof Error && error.message
+          ? error.message
+          : "Unable to send right now. Please try again in a moment.";
+        contactFormStatus.textContent = errorMessage;
         contactFormStatus.classList.add("is-error");
       }
     } finally {
       if (submitButton) {
         submitButton.disabled = false;
+        submitButton.removeAttribute("aria-busy");
         submitButton.textContent = originalLabel || "Submit";
       }
     }

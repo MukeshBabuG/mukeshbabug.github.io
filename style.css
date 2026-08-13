@@ -1167,7 +1167,7 @@ section[id] {
 
 .resume-showcase {
   position: relative;
-  padding: var(--section-space) 24px;
+  padding: clamp(34px, 4.4vw, 56px) 24px var(--section-space);
   overflow: hidden;
   background: var(--gradient-brand-dark);
   color: var(--text-on-dark);
@@ -1759,7 +1759,7 @@ section[id] {
   }
 
   .resume-showcase {
-    padding: clamp(58px, 7vw, 86px) 18px;
+    padding: clamp(34px, 5vw, 50px) 18px clamp(58px, 7vw, 86px);
   }
 
   .resume-showcase__heading h2 {
@@ -2041,7 +2041,7 @@ section[id] {
   }
 
   .resume-showcase {
-    padding: 52px 14px;
+    padding: 36px 14px 52px;
   }
 
   .resume-showcase__heading {
